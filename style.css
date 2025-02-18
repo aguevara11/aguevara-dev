@@ -1,18 +1,51 @@
+body {
+    font-family: 'Poppins', sans-serif; /* The font for the body is Poppins */
+    background-color: #1E1818;
+    color: #FFFFFF;
+    overflow: hidden;
+}
+.transparent{
+    color: rgba(255, 255, 255, 0.7); /* Makes text color 70% transparent */
+}
+
 nav ul {
     padding-bottom: 10px; /* Adds spaces to the bottom of the nav elemet */
     text-align: center; /* Centers the text horizontally */
     list-style-type: none; /* Removes unwanted design styles (Bullet Points) */
     margin: 0; /* Removes any default margin */
-    padding-top: 10px;
+    padding-top: 25px;
 
 }
 nav li {
     display: inline; /* Makes the ul words go in one line */
-    margin: 0 20px; /* This means: no space between the top and bottom and 20px left and right */
+    margin: 0 30px; /* This means: no space between the top and bottom and 20px left and right */
+    font-weight: bold; /* Makes the font style 'Bold' */
 }
 
+div {
+    position: relative;
+    width: 100vw;
+    height: 95vh;
+    overflow: hidden;
+}
+h1{
+    position: absolute;
+}
 
-body {
-    background-color: #0F0606;
-    color: aliceblue;
+#first-name{
+    font-size: 9vw;
+    top: 5%;
+    left: 5%;
+}
+
+#last-name{
+    font-size: 9vw;
+    bottom: 5%;
+    right: 5%;
+}
+p {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size: 1.5vw;
 }

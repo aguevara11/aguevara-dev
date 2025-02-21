@@ -3,9 +3,16 @@ body {
     background-color: #1E1818;
     color: #FFFFFF;
     overflow: hidden;
+    
 }
 .transparent{
     color: rgba(255, 255, 255, 0.7); /* Makes text color 70% transparent */
+}
+nav a:link,  
+nav a:visited,  
+nav a:active {  
+    color: inherit;  /* Always use the same color as parent */
+    text-decoration: none; /* Ensures no underline appears */
 }
 
 nav ul {
@@ -38,18 +45,130 @@ h1{
 
 #first-name{
     font-size: 9vw;
-    top: 5%;
-    left: 5%;
+    top: 5%; /* Moves the element down by 5% of the height of its containing element */
+    left: 5%; /* Moves the element right by 5% of the wdith of its containing element */
 }
 
 #last-name{
-    font-size: 9vw;
+    font-size: 9vw; /* 9% of screen width */
     bottom: 5%;
     right: 5%;
 }
-p {
-    position: absolute;
+#para {
+    position: absolute; /* Moves relative to its ancestor */
     bottom: 5%;
     left: 5%;
-    font-size: 1.5vw;
+    font-size: 1.5vw; /* 1.5% of the viewport width */
+}
+
+/*----------------ABOUT PAGE--------------------*/
+
+.about-container {
+    position: relative; /* Moves the element relative to its position */
+    width: 100vw; /* Meaning it spans the entire screen horizontally */
+    height: 95vh;
+   
+    
+    
+
+}
+
+
+.title-line-container {
+    position: relative; /* Keeps it inside the about-container */
+    display: flex; /* Aligns items in a column */
+    flex-direction: column; /* Stacks title and line */
+    justify-content: center; /* Centers content vertically */
+    margin-left: 8%; /* Adds space from the left */
+    margin-top: 5%; /* Adds space from the top */
+    width: 85%; /* Shrinks to fit content */
+    height: 100px; /* Defines container height */
+  
+
+}
+
+#about-text {
+    font-size: 5vw;
+    margin: 0; /* Removes default margins to ensure proper centering */
+}
+
+.line-across {
+    background-color: #383838;
+    height: 2px;
+    margin-top: auto;
+    border-radius: 50px;
+}
+
+.image-holder {
+    
+    position: relative;
+    margin-top: 3%;
+    width: 30%;
+    height: 500px;
+    margin-left: 5%;
+    padding-left: 30px;
+    padding-right: 70px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    background-color: beige;
+    
+
+
+}
+
+#gray-rectangle {
+    background-color: #BBBABA;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    width: 90%;/* Adjust as needed */
+    height: 97%; /* Adjust based on your layout */
+    border-radius: 10px;
+   
+}
+
+.portfolio-img {
+    position: absolute; /* Position it inside .image-holder */
+    top: 0%; /* Move it down to the middle */
+    right: 20%; /* Move it to the center */
+    width: 70%; /* Adjust size */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 2; /* Make sure it's above the rectangle */
+    border-radius: 10px;
+}
+
+
+.about-description {
+    position: absolute;
+    top: 28%;
+    right: 10%;
+    width: 40%;
+    height: auto; /* Let content define height */
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align content at the top */
+}
+
+.about-description h1 {
+    margin: 0;
+    padding-bottom: 10px; /* Adds space below the heading */
+}
+
+#para-about {
+    text-align: left;
+    margin-top: 15%;
+   
+    width: 100%;
+    font-size: medium;
+}
+
+
+
+
+
+
+.image-holder, .about-description {
+    border: 2px solid red;
 }

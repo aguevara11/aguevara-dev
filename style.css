@@ -5,6 +5,9 @@ body {
     overflow: hidden;
     
 }
+
+
+
 .transparent{
     color: rgba(255, 255, 255, 0.7); /* Makes text color 70% transparent */
 }
@@ -111,8 +114,7 @@ h1{
     padding-top: 10px;
     padding-bottom: 20px;
     box-sizing: border-box;
-    background-color: beige;
-    
+
 
 
 }
@@ -169,6 +171,91 @@ h1{
 
 
 
-.image-holder, .about-description {
-    border: 2px solid red;
+
+
+.main-projects-container {
+    position: relative; /* Moves the element relative to its position */
+    width: 99vw; /* Meaning it spans the entire screen horizontally */
+    min-height: 142vw;
+   
+}
+
+
+.projects-container{
+    position: relative; /* Keeps it inside the about-container */
+    display: flex; /* Aligns items in a column */
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    margin-left: 8%; /* Adds space from the left */
+    margin-top: 3%; /* Adds space from the top */
+    width: 85%; /* Shrinks to fit content */
+    min-height: 30vw;
+    height: auto; /* Defines container height */
+    gap: 50px; /* Adds space between each .project */
+    padding: 20px;
+}
+
+.project {
+    display: flex; /* Items side by side */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Align elements vertically */
+    width: 100%; /* Makes project smaller */
+    max-height: 40vw; /* Keeps it smaller than container */
+    padding: 5px; /* Adds space inside */
+    box-sizing: border-box; /* Ensures padding doesn’t expand width */
+    border-radius: 10px; /* Rounded edges */
+    margin: auto; /* Centers it inside the parent container */
+    gap: 40px;
+}
+
+
+
+.img-container {
+    height: 100%;
+    flex: 1; /* Takes up equal space */
+    display: flex;
+    justify-content:center; /* Centers image inside */
+    gap: 30px; /* Adjust this value for spacing */
+    
+}
+.img-container img{
+    border-radius: 10px;
+    max-width: 100%; /* Ensures image does not overflow */
+    max-height: 100%; /* Ensures image fits inside the container */
+    object-fit: contain; /* Keeps the entire image visible */
+    object-position: top; 
+}
+.project-text {
+    height: 100%;
+    flex: 1; /* Takes up equal space */
+    text-align: left; /* Aligns text to the left */
+}
+#specific-height{
+    height: 100%;
+}
+
+a:link,  
+a:visited,  
+a:active {  
+    color: inherit;  /* Always use the same color as parent */
+    text-decoration: underline; /* Ensures no underline appears */
+}
+
+.transparent2{
+    color: rgba(255, 255, 255, 0.7); /* Makes text color 70% transparent */
+    overflow-y:auto;
+    display: flex;
+    flex-direction: column; /* Ensures elements stack vertically */
+    min-height: 100vh; /* Ensures the body fills the viewport */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.html-overflow{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
 }

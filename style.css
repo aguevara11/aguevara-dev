@@ -259,3 +259,23 @@ a:active {
     height: 100%;
     overflow-x: hidden;
 }
+
+
+/* Resume Page */
+
+.resume-container {
+    position: relative; /* Moves the element relative to its position */
+    width: 100vw; /* Meaning it spans the entire screen horizontally */
+    height: 95vh;
+    overflow: auto;
+   
+    
+    
+
+}
+.resume-link{
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 70%;
+    height: 70vw;
+}

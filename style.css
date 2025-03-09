@@ -279,3 +279,25 @@ a:active {
     width: 70%;
     height: 70vw;
 }
+/* Contact Page */
+
+.contact-container {
+    position: relative; /* Moves the element relative to its position */
+    width: 100vw; /* Meaning it spans the entire screen horizontally */
+    height: 95vh;
+    overflow: auto;
+    
+
+}
+
+.contact-info{
+    width: 70%;
+    margin: 0 auto;
+    background-color: aqua;
+  
+}
+
+.contact-info h1 {
+    
+}
+

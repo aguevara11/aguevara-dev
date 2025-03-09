@@ -6,6 +6,44 @@ body {
     
 }
 
+/* index.html (Page before portfolio) */
+#first-name-index{
+    font-size: 8vw;
+    top: 10%; /* Moves the element down by 5% of the height of its containing element */
+    left: 5%; /* Moves the element right by 5% of the wdith of its containing element */
+}
+
+#last-name-index{
+    font-size: 8vw; /* 9% of screen width */
+    top: 10%;
+    right: 5%;
+}
+
+#para-index {
+    position: absolute; /* Moves relative to its ancestor */
+    bottom: 35%;
+    left: 43%;
+    font-size: 3vw; /* 1.5% of the viewport width */
+    background-color: #1E1818;
+    border-radius: 10px;
+    font-weight:500;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+}
+
+#para-index:hover {
+    transform: translateX(-2%) translateY(-5px); /* Moves the button up slightly */
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.7); /* Adds shadow effect */
+}
+
+
+div a:link,  
+div a:visited,  
+div a:active {  
+    color: rgba(255, 255, 255, 0.7);   /* Always use the same color as parent */
+    text-decoration: none; /* Ensures no underline appears */
+
+}
 
 
 .transparent{

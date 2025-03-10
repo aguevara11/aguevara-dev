@@ -3,6 +3,7 @@ body {
     background-color: #1E1818;
     color: #FFFFFF;
     overflow: hidden;
+    min-height: 100vh;
     
 }
 
@@ -314,8 +315,18 @@ a:active {
 .resume-link{
     padding-top: 50px;
     margin: 0 auto;
-    width: 70%;
+    width: 100%;
     height: 70vw;
+    
+  
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    
+}
+.resume-pdf{
+    
+    width: 70vw;
+    margin-left: 15vw;
 }
 /* Contact Page */
 
@@ -325,7 +336,7 @@ a:active {
     justify-content: space-between; /* Ensures space between items */
     align-items: flex-start; /* Aligns items at the top */
     width: 100vw; /* Full width */
-    height: 95vh;
+    height: 100vh;
     padding: 1px; /* Adds space inside the container */
 }
 
@@ -345,7 +356,8 @@ a:active {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 45vw;
+    width: 40vw;
+    height: 500px;
     max-width: 800px;
     margin: 0 auto; /* Centers the form */
     padding: 20px;
@@ -403,3 +415,64 @@ a:active {
     justify-content: flex-end; /* Moves form to the right */
     
 }
+.footer-about {
+    
+    color:  rgba(255, 255, 255, 0.7); /* Text color */
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Allow positioning adjustments */
+    top: -30px; /* Adjust this value to push the footer up */
+  }
+
+  .footer-contact {
+    
+    color:  rgba(255, 255, 255, 0.7); /* Text color */
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Allow positioning adjustments */
+    top: -80px; /* Adjust this value to push the footer up */
+  }
+  .footer-projects {
+    
+    color:  rgba(255, 255, 255, 0.7); /* Text color */
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Allow positioning adjustments */
+    top: 0px; /* Adjust this value to push the footer up */
+  }
+
+  .footer-resume {
+    color: rgba(255, 255, 255, 0.7); /* Text color */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    top: 0; /* Remove the negative value to avoid pushing the footer up */
+    width: 100%; /* Ensure the footer spans the full width */
+    margin-top: 0px; /* Adjust to create some space between content and footer */
+    height: 20px
+  }
+
+ 
+  
+  .footer-content p {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-icon img {
+    width: 20px; /* Adjust size as needed */
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon:hover img {
+    transform: scale(1.1); /* Add hover effect */
+  }
+  
